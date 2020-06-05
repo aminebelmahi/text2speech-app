@@ -14,7 +14,7 @@ A type and speak app that uses the speech sythnesis of the <a href="https://deve
 - Bootstrap (CSS Framework)
 - JavaScript
 
-### <a href="">App Demo</a>
+### <a href="https://codedish.github.io/text2speech-app/.">App Demo</a>
 
 ## Contributing
 
