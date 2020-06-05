@@ -9,6 +9,12 @@
     <title>Text2Speech</title>
 </head>
 
+<style>
+    textarea {
+        resize: none;
+    }
+</style>
+
 <body class="bg-light text-dark">
     <div class="container text-center mt-5">
         <h2>
@@ -17,8 +23,9 @@
         <div class="row">
             <div class="col-md-6 mx-auto mt-3">
                 <form>
-                    <!-- Languages -->
+                    <!-- Voices & Languages -->
                     <div class="form-group">
+                        <label for="voice-select">Choose your preferable voice:</label>
                         <select id="voice-select" class="form-control form-control-lg"></select>
                     </div>
                     <!-- Rate -->
@@ -39,13 +46,16 @@
                             placeholder="Type your text here..." rows="6"></textarea>
                     </div>
                     <!-- Buttons -->
-                    <button class="btn-dark btn-lg border-0">Speek It!</button>
-                    <button class="btn-danger btn-lg border-0">Stop It!</button>
+                    <button class="btn-dark btn-lg border-0 float-left mr-2" id="speak-btn">Speek</button>
+                    <button class="btn-danger btn-lg border-0 float-left" id="stop-btn">Stop</button>
+                    <button class="btn-primary btn-lg border-0 float-right" id="clearText">Clear Text</button>
                 </form>
             </div>
         </div>
     </div>
 
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
